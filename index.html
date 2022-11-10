@@ -38,6 +38,14 @@
         <div class="booking-container">
           <a href="">BOOK A TABLE</a>
         </div>
+        
+      </div>
+      <div class="burger-container">
+        <div class="hamburger" id="hamburger-6">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
       </div>
     </div>
   </nav>
@@ -203,5 +211,63 @@
       <div class="item item-5"></div>
     </div>
   </section>
+  <footer>
+    <div class="footer-wrapper">
+      <div class="logo-desc__wrapper">
+        <div class="logo-container">
+          <img src="/assets/images/Frame.png" alt="" style="filter:invert(1);">
+        </div>
+        <div>
+          <p class="footer-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium impedit quod porro odio aspernatur, beatae nulla, harum voluptate fuga, obcaecati eos id eveniet adipisci iste. Itaque cum unde ipsum earum. Tempora provident quos quo maiores soluta amet totam quasi dolorum adipisci. Nobis, pariatur. Ipsum aliquam optio a inventore quod perspiciatis.</p>
+        </div>
+      </div>
+      <div class="footer-links__wrapper">
+        <div class="links-container">
+          <ul>
+            <li>
+              <a href="">HOME</a>
+            </li>
+            <li>
+              <a href="">ABOUT</a>
+            </li>
+            <li>
+              <a href="">MENU</a>
+            </li>
+            <li>
+              <a href="">AMBIENCE</a>
+            </li>
+            <li>
+              <a href="">GALLERY</a>
+            </li>
+            <li>
+              <a href="">CONTACT US</a>
+            </li>
+            <li>
+              <a href="">BOOK A TABLE</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="social-copyright__wrapper">
+        <div class="copyright-container">
+          <p>Copyright &#9400; Share Cafe 2023<br>All right reserved</p>
+          <p style="margin-top:20px;">This website was developed by<br>IntegraNet Network Solution Services</p>
+        </div>
+        <div class="socials-container">
+        </div>
+      </div>
+    </div>
+    <div class="black-bar"></div>
+  </footer>
+  <script>
+    const hamburger = document.querySelector('.hamburger')
+    const nav = document.querySelector('.nav-container')
+
+    hamburger.addEventListener('click', function(){
+      hamburger.classList.toggle("is-active")
+      nav.classList.toggle("show")
+      nav.classList.add('scale-in-tr')
+    })
+  </script>
 </body>
 </html>
