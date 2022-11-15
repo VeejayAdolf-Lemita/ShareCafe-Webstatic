@@ -22,6 +22,8 @@ a, li, ul{
   font-style: normal;
 }
 
+
+
 nav .nav-wrapper{
   position: fixed;
   width: 100%;
@@ -31,7 +33,7 @@ nav .nav-wrapper{
   align-content: center;
   background: #E2E3E3;
   padding: 10px 0;
-  z-index: 21;
+  z-index: 101;
 }
 
 .nav-container{
@@ -191,7 +193,12 @@ ul.nav-links{
   text-justify: inter-word;
 }
 
-/*image slider*/
+.ambience__image{
+  width: 150px;
+  height:700px;
+}
+
+/***Image Slider***/
 .image-slider-container {
   margin-top: 20px;
   position: relative;
@@ -202,19 +209,23 @@ ul.nav-links{
   background-color: #1c1c1c;
   box-shadow: 0 11px 22px rgb(0 0 0 / 20%), 0 7px 7px rgb(0 0 0 / 24%);
 }
+
 .image-slider-container input {
   display: none;
 }
+
 .image-slider-container .slide_img {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
+
 .image-slider-container .slide_img img {
   width: inherit;
   height: inherit;
 }
+
 .image-slider-container .slide_img .prev, .image-slider-container .slide_img .next {
   width: 12%;
   height: inherit;
@@ -226,10 +237,12 @@ ul.nav-links{
   cursor: pointer;
   text-align: center;
 }
+
 .image-slider-container .slide_img .prev:hover, .image-slider-container .slide_img .next:hover {
   transition: 0.3s;
   background-color: rgba(255, 82, 82, 0.8);
 }
+
 .image-slider-container .slide_img .prev span, .image-slider-container .slide_img .next span {
   position: absolute;
   width: 0px;
@@ -238,14 +251,17 @@ ul.nav-links{
   top: 50%;
   transform: translateY(-50%);
 }
+
 .image-slider-container .slide_img .prev span {
   border-color: transparent #fff transparent transparent;
   right: 35%;
 }
+
 .image-slider-container .slide_img .next span {
   border-color: transparent transparent transparent #fff;
   left: 35%;
 }
+
 .image-slider-container #nav_slide {
   width: 100%;
   bottom: 12%;
@@ -255,6 +271,7 @@ ul.nav-links{
   z-index: 99;
   cursor: default;
 }
+
 .image-slider-container #nav_slide .dots {
   top: -5px;
   width: 18px;
@@ -267,12 +284,15 @@ ul.nav-links{
   transition: 0.4s;
   cursor: pointer;
 }
+
 .image-slider-container #nav_slide #dot1:hover {
   background: #795548;
 }
+
 .image-slider-container #nav_slide #dot3:hover {
   background: #2196F3;
 }
+
 .image-slider-container #nav_slide #dot4:hover {
   background: #4CAF50;
 }
@@ -379,54 +399,6 @@ ul.nav-links{
   justify-content: space-around;
 }
 
-.gallery-section{
-  background: #F8F8F8;
-}
-
-
-.gallery-wrap {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100vh;
-  margin: 0 auto;
-  padding:50px 100px;
-}
-
-.item {
-  flex: 1;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: none;
-  transition: flex 0.8s ease;
-  cursor: pointer;
-  margin: 0 10px;
-}
-.item:hover {
-  flex: 2;
-}
-
-.item-1 {
-  background-image: url("https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=1600");
-}
-
-.item-2 {
-  background-image: url("https://images.pexels.com/photos/784633/pexels-photo-784633.jpeg?auto=compress&cs=tinysrgb&w=1600");
-}
-
-.item-3 {
-  background-image: url("https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg?auto=compress&cs=tinysrgb&w=1600");
-}
-
-.item-4 {
-  background-image: url("https://images.pexels.com/photos/33162/food-restaurant-menu-asia.jpg?auto=compress&cs=tinysrgb&w=1600");
-}
-
-.item-5 {
-  background-image: url("https://images.pexels.com/photos/70842/hot-pepper-pepper-fire-food-70842.jpeg?auto=compress&cs=tinysrgb&w=1600");
-}
-
 
 .footer-wrapper{
   padding: 100px;
@@ -467,28 +439,98 @@ ul.nav-links{
   display: none;
 }
 
-/*Animation*/
-.scale-in-tr{-webkit-animation:scale-in-tr .3s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-tr .3s cubic-bezier(.25,.46,.45,.94) both}
-@-webkit-keyframes scale-in-tr{0%{-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}}@keyframes scale-in-tr{0%{-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}}
-
-@media screen and (width <= 1380px){
-  .background-border{
-    display: none;
-  }
+.gallery-section{
+  background: #F8F8F8;
 }
 
 
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding:50px 100px;
+}
 
-@media screen and (width <= 1250px){
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.item:hover {
+  flex: 2;
+}
+
+.item-1 {
+  background-image: url("https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=1600");
+}
+
+.item-2 {
+  background-image: url("https://images.pexels.com/photos/784633/pexels-photo-784633.jpeg?auto=compress&cs=tinysrgb&w=1600");
+}
+
+.item-3 {
+  background-image: url("https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg?auto=compress&cs=tinysrgb&w=1600");
+}
+
+.item-4 {
+  background-image: url("https://images.pexels.com/photos/33162/food-restaurant-menu-asia.jpg?auto=compress&cs=tinysrgb&w=1600");
+}
+
+.item-5 {
+  background-image: url("https://images.pexels.com/photos/70842/hot-pepper-pepper-fire-food-70842.jpeg?auto=compress&cs=tinysrgb&w=1600");
+}
+
+
+/***Animation Minified***/
+.scale-in-tr{-webkit-animation:scale-in-tr .3s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-tr .3s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes scale-in-tr{0%{-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}}@keyframes scale-in-tr{0%{-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}}
+
+/***Responsiveness***/
+@media screen and (width <= 1440px){
+  .background-border{
+    display: none;
+  }
+
+}
+
+@media screen and (width <= 1386px) {
+  .menu-section-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .popular-dishes__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .popular-dishes__container {
+    position: relative;
+    background: #ecececc7;
+    transform: translateX(0);
+  }
+
+}
+
+@media screen and (width <= 1280px){
   .burger-container{
     display: block;
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 10px;
     z-index: 4;
   }
   .hamburger .line{
-    width: 50px;
+    width: 30px;
     height: 5px;
     background-color: rgb(170, 156, 156);;
     display: block;
@@ -546,7 +588,6 @@ ul.nav-links{
     align-content: center;
     background: #E2E3E3;
     padding: 10px 0;
-    z-index: 21;
   }
   .nav-container{
     display: none;
@@ -576,10 +617,16 @@ ul.nav-links{
     justify-content: center;
   }
   .about-container{
-    align-items: center;
-    align-content: center;
     flex-direction: column-reverse;
-    gap: 50px;
+    align-items: center; 
+    gap: 40px;
+  }
+
+  .gallery-wrap {
+    padding: 0;
+  }
+  .item {
+    margin: 0;
   }
   .about-us__context{
     text-align: center;
@@ -589,28 +636,13 @@ ul.nav-links{
     margin: 0;
   }
 
- 
-
-}
-
-@media screen and (width <= 1385px){
-  .menu-section-wrapper {
-    flex-direction: column-reverse;
+  
+  .gallery-wrap {
+    padding: 0;
   }
-
-  .popular-dishes__wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  .item {
+    margin: 0;
   }
-
-  .popular-dishes__container {
-    position: relative;
-    background: #ecececc7;
-    transform: translateX(0);
-  }
-
   
   .image-slider-container {
     height: 700px;
@@ -619,32 +651,168 @@ ul.nav-links{
   .gallery-wrap {
     height: 28vh;
   }
+  .ambiance-container {
+    gap: 50px;
+  }
 }
 
+@media screen and (width <= 1024px){
+  .content-image {
+    width: 100px;
+  }
 
+  .content-description{
+    font-size: 14px;
+    width: 165px;
+  }
 
-/* 
-@media screen and (max-width: 685px) {
+  .content-wrapper{
+    justify-content: center;
+  }
+}
+
+@media screen and (width <= 800px){
   .image-slider-container {
-    border: none;
-    width: 100%;
-    height: 0;
-    padding-bottom: 55%;
+    width: 500px;
+    height: 600px;
+    margin-bottom: 25px;
   }
-  .image-slider-container .slide_img .prev, .image-slider-container .slide_img .next {
-    width: 15%;
+  .nav-container.show{
+    justify-content: initial;
+    overflow: hidden;
   }
-  .image-slider-container .slide_img .prev span, .image-slider-container .slide_img .next span {
-    border: solid 12px;
+
+  .content-wrapper{
+    padding: 50px 0;
   }
-  .image-slider-container .slide_img .prev span {
-    border-color: transparent #fff transparent transparent;
+
+  .content-image {
+    width: 100px;
   }
-  .image-slider-container .slide_img .next span {
-    border-color: transparent transparent transparent #fff;
+
+  .content-description{
+    font-size: 14px;
+    width: 145px;
   }
-  .image-slider-container #nav_slide .dots {
-    width: 12px;
-    height: 12px;
+
+
+  .ambiance-container {
+    gap: 0;
   }
-} */
+}
+
+@media screen and (width <= 768px) {
+  .content-wrapper {
+    gap: 60px;
+  }
+
+  .content-container {
+    margin: 10px;
+  }
+
+  .content-description {
+    width: 200px;
+  }
+}
+
+@media screen and (width <= 616px){
+  .ambience__image {
+    width: 80px;
+    height: 300px;
+  }
+}
+
+@media screen and (width <= 568px) {
+  .landing-page__title {
+    font-size: 40px;
+  }
+  
+  .subtext {
+    font-size: 30px;
+  }
+
+  .title-about {
+    font-size: 40px;
+  }
+
+  .about-us__image{
+    width: 400px;
+  }
+
+  .ambience__image {
+    width: 80px;
+    height: 300px;
+  }
+}
+
+@media screen and (width <= 512px) {
+  .landing-page__title {
+    font-size: 28px;
+  }
+
+  .subtext {
+    font-size: 22px;
+  }
+
+  .title-about {
+    font-size: 28px;
+  }
+
+  .description {
+    width: 360px;
+  }
+
+  .about-us__image {
+    width: 360px;
+  }
+
+  .popular-dishes__container {
+    padding: 30px;
+  }
+
+  .title-about__popular{
+    font-size: 28px;
+  }
+
+  .subtitle p {
+    font-family: 'blacksignature';
+    font-size: 22px;
+  }
+
+  .image-slider-container {
+    width: 360px;
+    height: 400px;
+  }
+}
+
+@media screen and (width <= 376px) {
+  .description {
+    width: 300px;
+  }
+  
+  .about-us__image {
+    width: 300px;
+  }
+  
+  .popular-dishes__container {
+    padding: 2px;
+  }
+
+  .title-about__popular {
+    font-size: 18px;
+  }
+
+  .image-slider-container {
+    width: 300px;
+  }
+}
+
+@media screen and (width <= 338px) {
+  .ambience__image {
+    width: 50px;
+  }
+}
+
+@media screen and (width <= 320px) {
+}
+
