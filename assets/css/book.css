@@ -1,0 +1,35 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: sans-serif;
+  font-size: 16px;
+  background: #D9D9D9;
+}
+
+a, li, ul{
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: 'blacksignature';
+  src: url('/assets/typefaces/blacksignature/BlackSignature_PERSONAL_USE_ONLY.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title{
+  font-size: 40px;
+  color: #737373;
+}
+
+.subtitle{
+  font-family: 'blacksignature';
+  font-size: 30px;
+  color: #B1B1B1;
+}
